@@ -1,0 +1,229 @@
+<doc!<!DOCTYPE html>
+    <html>
+      <head>
+      <style media="screen">
+      table { font-size:1.5rem;
+         text-align: center;
+         border:8px solid white;
+         padding:4px;
+         margin:0;
+         display:block;}
+        body {
+      background:brown;
+      padding: 2rem;
+
+    }
+
+    h2 {
+      font-family: 'Arial';
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 0.75;
+    }
+
+    span {
+      display: block;
+    }
+
+    span:not(.light) {
+      opacity: 0;
+      animation: flashText .5s ease-out alternate infinite;
+    }
+
+    span.light {
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: -10%;
+        width: 100%;
+        height: 120%;
+        background: #fff;
+        filter: blur(10px);
+        content: "";
+        opacity: 0;
+        animation: flash .5s ease-out alternate infinite;
+      }
+    }
+
+    @keyframes flash{
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes flashText {
+      to {
+        opacity: 0.15;
+      }
+    }
+    storong {color:white;
+    }
+    h2  {background-image:url('https://t1.daumcdn.net/cfile/tistory/266FA5505646BA6432')}
+    a{color:white;}
+    .like-content {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 10px dashed #eee;
+    text-align: center;
+}
+.like-content span {
+    color: #9d9da4;
+    font-family: monospace;
+}
+.like-content .btn-secondary {
+      display: block;
+      margin: 40px auto 0px;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+      transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+      margin-right: 5px;
+}
+.animate-like {
+    animation-name: likeAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
+.loading {
+  perspective: 1000px;
+}
+.loading span {
+  display: inline-block;
+  margin: 0 -.05em;
+  transform-origin: 50% 50% -25px;
+  transform-style: preserve-3d;
+  animation: loading 1.6s infinite;
+}
+.loading span:nth-child(2) {
+  animation-delay: .1s;
+}
+.loading span:nth-child(3) {
+  animation-delay: .2s;
+}
+.loading span:nth-child(4) {
+  animation-delay: .3s;
+}
+.loading span:nth-child(5) {
+  animation-delay: .4s;
+}
+.loading span:nth-child(6) {
+  animation-delay: .5s;
+}
+.loading span:nth-child(7) {
+  animation-delay: .6s;
+}
+@keyframes loading {
+  0% {
+    transform: rotateX(-360deg);
+  }
+  70% {
+    transform: rotateX(0);
+  }
+}
+
+
+
+
+    tr {text-align:center;}
+    td {text-align:center;
+    width:400px;}
+    table {border-spacing:200px; border-collapse: separate;}
+
+
+
+      </style>
+
+
+
+      </head>
+
+
+      <body>
+        <h2>
+          <span>THE</span>
+          <span class="light">GREAT AUTHORS</span>
+          <span></span>
+          <span>INTERESTED</span>
+          <span>BEHIND STORY</span>
+        </h2>
+        <table border="1">
+     <thead>
+       <th><font color=white><strong>AUTHORS</strong></font></style></th><th><font color=white><strong>THEIR INFORMATION</strong></font></th>
+
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>  <a href="1.html">edgar allan poe</a></td>
+               <td><a href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe">about he</a></td>
+             </tr>
+             <tr> <td>  <a href="1.html">stephen king</a></td>
+               <td><a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%8B%B0%EB%B8%90_%ED%82%B9">about he</a></td>
+             </tr>
+             <tr>
+               <td><a href="1.html">William Shakespeare</a></td>
+               <td><a href="https://ko.wikipedia.org/wiki/%EC%9C%8C%EB%A6%AC%EC%97%84 _%EC%85%B0%EC%9D%B5%EC%8A%A4%ED%94%BC%EC%96%B4">about he</a></td>
+             </tr>
+             <tr>
+               <td><a href="1.html">Mary Wollstonecraft Shelley</a></td><td><a href="https://ko.wikipedia.org/wiki/%EB%A9%94%EB%A6%AC_%EC%85%B8%EB%A6%AC"
+                 >about she</a></td>
+             </tr>
+             <tr>
+               <td><a href="1.html">Mark Twain</a></td><td><a href="https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC_%ED%8A%B8%EC%9B%A8%EC%9D%B8">about he</a></td>
+             </tr>
+
+     </tbody>
+   </table>
+   <div class="like-content">
+  <button class="btn-secondary like-review">
+    <i class="fa fa-heart" aria-hidden="true"></i> Like
+  </button>
+
+</div>
+<p><div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://assign-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p></body></html>
